@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto&family=Ubuntu:wght@300;400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+.main-container {
+  min-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.95);
+}
+.container {
+  color: white;
+  width: 70%;
+  min-height: 20vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: auto auto;
+    gap: 1rem;
+    min-height: 20vh;
+  }
+  .btns-container {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: center;
+
+    .btn {
+      background-color: rgba(28, 170, 23, 0.603);
+      padding: 0.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 3px;
+      border: none;
+    }
+    .icon {
+      font-size: 1.05rem;
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 96%;
+  }
+}
